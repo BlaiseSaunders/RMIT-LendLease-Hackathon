@@ -6,7 +6,7 @@
 
     <body>
         <div class="row">
-            <h1 class="container; text-center">Login</h1>
+            <h1 class="container text-center">Login</h1>
         </div>
         <form method="POST" action="validation.php">
             <div class="row">
