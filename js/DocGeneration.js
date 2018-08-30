@@ -6,3 +6,8 @@ function validation() {
     }
     return true;
 }
+
+function getTitle() {
+    let title = document.getElementById("title").value;
+    document.getElementById("DocTitle").value = title;
+}
