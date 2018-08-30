@@ -1,6 +1,6 @@
 <!doctype html>
 <html>
-    <?php 
+    <?php
         include 'bootstrap.php';
     ?>
 
