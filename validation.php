@@ -5,6 +5,6 @@
     ?>
 
     <?php
-        header('Location: http://hack.mynemmajeff.club/index.php');
+        header('Location: http://hack.mynemmajeff.club/createtemplate.php');
     ?>
 </html>
