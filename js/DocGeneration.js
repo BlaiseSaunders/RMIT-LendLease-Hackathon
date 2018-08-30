@@ -8,7 +8,3 @@ function validation() {
     }
     return true;
 }
-
-function getTitle() {
-    document.getElementById("DocTitle").value = title;
-}
