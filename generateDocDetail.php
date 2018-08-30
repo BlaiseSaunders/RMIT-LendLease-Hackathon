@@ -33,6 +33,7 @@ include 'bootstrap.php';
 
             </textarea>
             </div>
+            <button class="btn btn-primary">Confirm</button>
         </form>
     </div>
 </div>
