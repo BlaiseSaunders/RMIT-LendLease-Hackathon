@@ -1,5 +1,7 @@
+let title;
+
 function validation() {
-    let title = document.getElementById("title").value;
+    title = document.getElementById("title").value;
     if (title === "" || null == title) {
         alert("Please enter your title!");
         return false;
@@ -8,6 +10,5 @@ function validation() {
 }
 
 function getTitle() {
-    let title = document.getElementById("title").value;
     document.getElementById("DocTitle").value = title;
 }
