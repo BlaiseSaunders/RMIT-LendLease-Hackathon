@@ -11,7 +11,7 @@ include 'bootstrap.php';
     <form method="POST" action="generateDocDetail.php" onsubmit="return validation()">
         <input type="text" id="title" name="title" placeholder="Please enter document title"><br>
 
-        <div class="col-md-12 row">
+        <div class="col-md-12 row mt-5">
             <button class="btn btn-primary" type="submit">Next</button>
         </div>
     </form>
