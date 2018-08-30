@@ -3,6 +3,7 @@
 <?php
 include 'bootstrap.php';
 ?>
+
 <script type="text/javascript" src="js/DocGeneration.js"></script>
 <script type="text/javascript" src="js/AddField.js"></script>
 <link rel="stylesheet" type="text/css" href="css/dropdown.css">
