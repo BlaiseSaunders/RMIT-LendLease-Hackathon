@@ -8,16 +8,20 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Dashboard</title>
+    <title>Create Smart Document</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="../css/dashTheme.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="../../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+    <!-- JQuery for my iframe -->
+    <script src="js/iframe.js"></script>
 </head>
 
 <body>
@@ -65,38 +69,38 @@
             </div>
             <!-- /.sidebar-collapse -->
         </div>
+
+
         <!-- /.navbar-static-side -->
     </nav>
 
     <div id="page-wrapper">
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Dashboard</h1>
+                <h1 class="page-header">Create Smart Document</h1>
             </div>
-            <!-- /.col-lg-12 -->
-
             <!-- /.col-lg-12 -->
             <div class="row">
                 <div class="col-lg-12">
                     <div class="panel panel-default" style="height: 600px;">
                         <div class="panel-heading">
-                            Basic Form Elements
+                            Create a new document
                         </div>
-                        <iframe src="home.html" id="myIframe" scrolling="yes" frameborder="0"> ...</iframe>
+                        <iframe src="../php/generateDoc.php" id="myIframe" scrolling="yes" frameborder="0"> ...</iframe>
                     </div>
                 </div>
-                <!-- /#page-wrapper -->
             </div>
-            <!-- /#page-wrapper -->
         </div>
-        <!-- /#wrapper -->
+        <!-- /#page-wrapper -->
     </div>
+    <!-- /#wrapper -->
+</div>
 
-    <!-- jQuery -->
-    <script src="../vendor/jquery/jquery.min.js"></script>
+<!-- jQuery -->
+<script src="../../vendor/jquery/jquery.min.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="../../vendor/bootstrap/js/bootstrap.min.js"></script>
 </body>
 
 </html>
