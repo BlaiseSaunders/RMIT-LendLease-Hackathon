@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
     <?php 
-        include 'bootstarp.php';
+        include 'bootstrap.php';
     ?>
 
     <body>

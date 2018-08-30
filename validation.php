@@ -1,10 +1,10 @@
 <!doctype html>
 <html>
     <?php
-        include 'bootstarp.php';
+        include 'bootstrap.php';
     ?>
 
     <?php
-        header('Location: http://hack.mynemmajeff.club/index.html');
+        header('Location: http://hack.mynemmajeff.club/index.php');
     ?>
 </html>
