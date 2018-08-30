@@ -21,18 +21,20 @@ include 'bootstrap.php';
             <a href="#" onclick="add_field('audio')">Audio</a>
         </div>
     </div>
-    <form action="generateFinal.php" method="post">
-        <input type="hidden" value="<?php echo $_POST['title'] ?>"/>
-        <div id="form_zone">
+    <div class="row col-md-12 text-center">
+        <form action="generateFinal.php" method="post">
+            <input type="hidden" value="<?php echo $_POST['title'] ?>"/>
+            <div id="form_zone">
 
-        </div>
-        <div id="conclusion">
-            <h5>Conclusion</h5>
-            <textarea placeholder="Conclusion...">
+            </div>
+            <div id="conclusion">
+                <h5>Conclusion</h5>
+                <textarea placeholder="Conclusion...">
 
             </textarea>
-        </div>
-    </form>
+            </div>
+        </form>
+    </div>
 </div>
 </body>
 </html>
