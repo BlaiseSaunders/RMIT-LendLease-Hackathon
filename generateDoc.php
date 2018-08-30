@@ -12,7 +12,7 @@ include 'bootstrap.php';
         <input type="text" id="title" name="title">
 
         <button>Cancel</button>
-        <button>Next</button>
+        <button type="submit">Next</button>
     </form>
 </div>
 </body>
