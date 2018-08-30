@@ -9,11 +9,11 @@ function add_field(type)
 	{
 		default:
 		case "text":
-			new_html += "<input type='text' />";
+			new_html += "<textarea name='text_field[]'>Please enter data here...</textarea>";
 			break;
 		case "audio":
 		case "video":
-			new_html += "<input type='file' name='fileToUpload' id='fileToUpload' />";
+			new_html += "<input type='file' name='file_upload[]' id='file_upload'/>";
 			break;
 	}
 
