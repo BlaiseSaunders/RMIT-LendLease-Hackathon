@@ -6,3 +6,7 @@ function validation() {
     }
     return true;
 }
+
+function toSubmit() {
+    return validation();
+}
