@@ -8,7 +8,7 @@ include 'bootstrap.php';
 <body>
 <div class="row text-center col-md-12">
     <h1>What is the title?</h1>
-    <form method="POST" action="generateDocDetail.php" onsubmit="return toSubmit()">
+    <form method="POST" action="generateDocDetail.php">
         <input type="text" id="title" name="title">
 
         <button>Cancel</button>
