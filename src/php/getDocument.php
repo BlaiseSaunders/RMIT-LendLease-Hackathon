@@ -51,7 +51,7 @@ if ($result->num_rows > 0)
 				echo "<hr/>";
 			}
 		}
-		else
+		else if ($feed == false)
 			echo "This document does nto have any attachments";
 	}
 }
