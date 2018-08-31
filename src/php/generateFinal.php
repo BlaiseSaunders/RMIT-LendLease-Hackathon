@@ -61,7 +61,7 @@ foreach ($_FILES['file_upload']['tmp_name'] as $file) // TODO: MAKE THIS
 	move_uploaded_file($file, $thisDataLocation);
 	echo "Moved file to $thisDataLocation<br/>";
 
-	if ($conn->query($docuDataInsert."( '".$documentID."', 1, '".$thisDataLocation."' )") == TRUE)
+	if ($conn->query($docuDataInsert."( '".$documentID."', 1, '".$dataLocation.$hash."' )") == TRUE)
 	{    
 		$last_id = $conn->insert_id;
 		echo "New record created and file uploaded successfully. Hash: ".$hash."Last inserted ID is: " . $last_id;
