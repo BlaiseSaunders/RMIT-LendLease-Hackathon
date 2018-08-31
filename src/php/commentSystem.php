@@ -22,7 +22,9 @@
     <!-- Custom CSS -->
     <link href="../css/dashTheme.css" rel="stylesheet">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <script src="getComments.js"></script>
+    
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -33,33 +35,8 @@
 
 <body>
 
-<?php
-	require "sql_header.php";
+<div id='comments' />
 
-	$documentID = $_GET['documentID'];
-
-	$commentGet = "SELECT documentID, content  FROM Comment WHERE documentID=".$documentID;
-
-
-
-	$result = $conn->query($commentGet);
-	if ($result->num_rows > 0) 
-	{
-		while ($row = $result->fetch_assoc())
-		{
-			$content = $row['content'];
-			echo "<b>Comment from John Smith: </b>";
-			echo "<p>$content</p><br/>";
-		}
-	}
-	else
-	{
-		echo "<h2>No comments. Be the first to add one!</h2>";
-	}
-
-
-
-?>
 <div class="container">
     <div class="row">
         <div class="col-lg-12">
