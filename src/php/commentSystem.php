@@ -36,11 +36,11 @@
 <div class="container">
     <div class="row">
         <div class="col-lg-12">
-            <form role="form">
+            <form role="form" method='POST' action='addComment.php'>
                 <br>
                 <div class="form-group">
                     <label>Add a comment</label>
-                    <textarea rows="3" class="form-control" placeholder="Enter text"></textarea>
+                    <textarea name='text' rows="3" class="form-control" placeholder="Enter text"></textarea>
                 </div>
 
                 <div class="form-group">
