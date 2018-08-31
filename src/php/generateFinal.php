@@ -33,27 +33,31 @@ foreach ($_POST['text_field'] as $text)
 	$hash = hash("md5", $text);
 	$thisDataLocation = $dataLocation.$hash;
 	file_put_contents($thisDataLocation, $text);
-	if ($conn->query($docuDataInsert."( '".$documentID."', 'text', '".$thisDataLocation."' )") == TRUE)
+	if ($conn->query($docuDataInsert."( '".$documentID."', 0, '".$thisDataLocation."' )") == TRUE)
 	{    
 		$last_id = $conn->insert_id;
 		echo "New record created successfully. Hash: ".$hash."Last inserted ID is: " . $last_id;
 	} 
 	else
-	echo "Error: " . $conn->error;
+		echo "Error: " . $conn->error;
 }
 foreach ($_POST['file_upload'] as $file) // TODO: MAKE THIS
 {
-	echo "<br> TETX: $text<br>";
+	echo "<br> file: $file<br>";
 	$hash = hash("md5", $text);
 	$thisDataLocation = $dataLocation.$hash;
-	file_put_contents($dataLocation, $text);
-	if ($conn->query($docuDataInsert."( '".$documentID."', 'text', '".$thisDataLocation."' )") == TRUE)
+	
+	// MOVE FILE TO LOCATION
+	echo "File uploaded to: ".$file['name'];
+	continue;
+
+	if ($conn->query($docuDataInsert."( '".$documentID."', 1, '".$thisDataLocation."' )") == TRUE)
 	{    
 		$last_id = $conn->insert_id;
-		echo "New record created successfully. Hash: ".$hash."Last inserted ID is: " . $last_id;
+		echo "New record created and file uploaded successfully. Hash: ".$hash."Last inserted ID is: " . $last_id;
 	} 
 	else
-	echo "Error: " . $conn->error;
+		echo "Error: " . $conn->error;
 }
 
 
