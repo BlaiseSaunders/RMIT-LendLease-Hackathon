@@ -32,7 +32,7 @@ foreach ($_POST['text_field'] as $text)
 	echo "<br> TETX: $text<br>";
 	$hash = hash("md5", $text);
 	$thisDataLocation = $dataLocation.$hash;
-	file_put_contents($dataLocation, $text);
+	file_put_contents($thisDataLocation, $text);
 	if ($conn->query($docuDataInsert."( '".$documentID."', 'text', '".$thisDataLocation."' )") == TRUE)
 	{    
 		$last_id = $conn->insert_id;
