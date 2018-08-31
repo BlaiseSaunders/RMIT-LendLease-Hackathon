@@ -22,6 +22,8 @@ if ($result->num_rows > 0)
 				echo "Got document data: ".$docres['dataLocation']."<br/>";	
 			}
 		}
+		else
+			echo "This document does nto have any attachments";
 	}
 }
 else
