@@ -56,7 +56,7 @@ include_once 'pageHeader.php';
                     </div>
                     <input name="title" type="hidden" value="<?php echo $_POST['title'] ?>"/>
 
-                    <div class="container" id="form_zone">
+                    <div id="form_zone">
                     </div>
                 </div>
                 <hr class="separate-line">
