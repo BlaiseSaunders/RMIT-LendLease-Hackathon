@@ -34,7 +34,7 @@ include_once 'pageHeader.php';
     </div>
     <div class="row col-md-12">
         <form action="generateFinal.php" method="post">
-            <input type="hidden" value="<?php echo $_POST['title'] ?>"/>
+            <input name='title' type="hidden" value="<?php echo $_POST['title'] ?>"/>
             <div id="form_zone">
 
             </div>
