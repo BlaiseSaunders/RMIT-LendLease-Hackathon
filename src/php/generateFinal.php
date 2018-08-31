@@ -26,7 +26,7 @@ else
 $documentID = $last_id;
 
 
-$dataLocation = "/srv/files/"
+$dataLocation = "/srv/files/";
 foreach ($_POST['text_field'] as $text)
 {
 	echo "<br> TETX: $text<br>";
