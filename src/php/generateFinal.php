@@ -33,7 +33,7 @@ foreach ($_POST['text_field'] as $text)
 	$hash = hash("md5", $text);
 	$dataLocation .= $hash;
 	file_put_contents($dataLocation, $text);
-	if ($conn->query($docuDataInsert."( '".$documentID."', 'text' '".$dataLocation."' )") == TRUE)
+	if ($conn->query($docuDataInsert."( '".$documentID."', 'text', '".$dataLocation."' )") == TRUE)
 	{    
 		$last_id = $conn->insert_id;
 		echo "New record created successfully. Hash: ".$hash."Last inserted ID is: " . $last_id;
