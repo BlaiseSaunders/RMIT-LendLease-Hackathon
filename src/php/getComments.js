@@ -1,4 +1,4 @@
-function get_commnets()
+function get_comments()
 {
 	var comments = document.getElementById('comments');
 
@@ -16,5 +16,5 @@ function get_commnets()
 
 
 window.onload = function() { 
-	setInterval("get_comments()", 10);
+	setInterval("get_comments()", 1000);
 }
