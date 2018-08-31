@@ -39,7 +39,7 @@
         <div class="col-lg-6">
             <form role="form">
                 <br>
-
+<!---- php Comment below---->
                 <?php
                 // define variables and set to empty values
                 $nameErr = $emailErr = $genderErr = $websiteErr = "";
@@ -132,7 +132,7 @@
                 echo "<br>";
                 echo $gender;
                 ?>
-
+<!--------- php comment above ------------------->
                 <div class="form-group">
                     <label>Add a comment</label>
                     <textarea rows="3" class="form-control" placeholder="Enter text"></textarea>
@@ -145,6 +145,16 @@
 
                 <button type="submit" class="btn btn-default">Submit Comment</button>
             </form>
+            <div>
+                <p> Name: Johnathan Joestar,
+                    Comment:
+                    Hi guys checkout my video on scaffold anchors!
+                </p>
+
+            </div>
+
+
+
         </div>
     </div>
 </div>
