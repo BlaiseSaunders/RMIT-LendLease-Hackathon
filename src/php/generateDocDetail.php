@@ -40,9 +40,9 @@ include_once 'pageHeader.php';
                 <hr class="separate-line">
                 <div class="container" id="docLearning">
                     <p>Description of incident: </p>
-                    <textarea placeholder="Description of incident..."></textarea>
+                    <textarea name="descriptionDoc" placeholder="Description of incident..."></textarea>
                     <p>Key Learning: </p>
-                    <textarea placeholder="Key learning point..."></textarea>
+                    <textarea name="keyLearning" placeholder="Key learning point..."></textarea>
                 </div>
                 <hr class="separate-line">
                 <div class="container" id="docAddition">
@@ -64,7 +64,7 @@ include_once 'pageHeader.php';
                 <hr class="separate-line">
                 <div class="container" id="conclusion">
                     <h5>Conclusion</h5>
-                    <textarea placeholder="Conclusion..."></textarea>
+                    <textarea name="conclusionDoc" placeholder="Conclusion..."></textarea>
                 </div>
 
                 <div class="container" id="thingmark">

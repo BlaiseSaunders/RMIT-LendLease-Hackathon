@@ -32,6 +32,9 @@ $text_array[] = "<h4>Incident Circumstance: ".$_POST['incidentCircumstance']."</
 $text_array[] = "<h4>Incident No: ".$_POST['incidentNo']."</h4>";
 $text_array[] = "<h4>Issued by: ".$_POST['docAuthor']."</h4>";
 $text_array[] = "<h4>Incident Date: ".$_POST['incidentDate']."</h4>";
+$text_array[] = "<h4>Description of incident: ".$_POST['descriptionDoc']."</h4>";
+$text_array[] = "<h4>Key Learning: ".$_POST['keyLearning']."</h4>";
+$text_array[] = "<h4>Conclusion: ".$_POST['conclusionDoc']."</h4>";
 
 $dataLocation = "/srv/files/";
 foreach ($text_array as $text)
