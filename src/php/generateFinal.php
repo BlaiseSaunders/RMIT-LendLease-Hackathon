@@ -41,20 +41,24 @@ foreach ($_POST['text_field'] as $text)
 	else
 		echo "Error: " . $conn->error;
 }
+
+
+
 echo "FILES: <br/>";
 var_dump($_FILES);
 echo "POST: <br/>";
 var_dump($_POST);
+
 foreach ($_FILES['file_upload']['tmp_name'] as $file) // TODO: MAKE THIS
 {
 	echo "<br> file: $file<br>";
-	$hash = hash("md5", $text);
+	$hash = hash("md5", $file);
 	$thisDataLocation = $dataLocation.$hash;
 	
 	// MOVE FILE TO LOCATION
-	echo "File uploaded to: ".$file['name']."<br/>";
-	echo "File uploaded to temp: ".$file['tmp_name']."<br/>";
-	continue;
+	echo "File uploaded to: ".$file."<br/>";
+	move_uploaded_file($file, $thisDataLocation);
+	echo "Moved file to $thisDataLocation<br/>";
 
 	if ($conn->query($docuDataInsert."( '".$documentID."', 1, '".$thisDataLocation."' )") == TRUE)
 	{    
