@@ -26,10 +26,15 @@ else
 $documentID = $last_id;
 
 
+$text_array = $_POST['text_field'];
+
+$text_array[] = $_POST['incidentCircumstance'];
+$text_array[] = $_POST['incidentDate'];
+
 $dataLocation = "/srv/files/";
-foreach ($_POST['text_field'] as $text)
+foreach ($text_array as $text)
 {
-	echo "<br> TETX: $text<br>";
+	echo "<br> TEXT: $text<br>";
 	$hash = hash("md5", $text);
 	$thisDataLocation = $dataLocation.$hash;
 	file_put_contents($thisDataLocation, $text);
