@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Create Smart Document</title>
+    <title>Team</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -35,9 +35,7 @@
         </div>
         <!-- /.navbar-header -->
 
-
         <!-- /.navbar-top-links -->
-
         <div class="navbar-default sidebar" role="navigation">
             <div class="sidebar-nav navbar-collapse">
                 <ul class="nav" id="side-menu">
@@ -53,7 +51,6 @@
                     <li>
                         <a href="createDocument.html"><i class="fa fa-edit fa-fw"></i> Create Smart Document</a>
                     </li>
-
                     <li>
                         <a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
                     </li>
@@ -67,25 +64,41 @@
     <div id="page-wrapper">
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Create Smart Document</h1>
+                <h1 class="page-header">Change the title of this to chosen doc</h1>
             </div>
-            <!-- /.col-lg-12 -->
+
             <div class="row">
                 <div class="col-lg-12">
                     <div class="panel panel-default" style="height: 600px;">
                         <div class="panel-heading">
-                            Create a new document
+                            OKAY so when you generate the smart document, put it inside this iframe
                         </div>
-                        <iframe src="../php/generateDoc.php" id="myIframe" scrolling="yes" frameborder="0"
-                                style="height:800px;"></iframe>
+                        <iframe src="login.html" id="myIframe" scrolling="yes" frameborder="0"
+                                style="height:600px;"></iframe>
+                    </div>
+
+                    <br><br>
+
+                    <div class="panel panel-default" style="height: 600px;">
+                        <div class="panel-heading">
+                            this is the commenting system
+                        </div>
+                        <iframe src="commentSystem.html" id="myIframe" scrolling="yes" frameborder="0"
+                                style="height:100%;"></iframe>
                     </div>
                 </div>
+                <!-- /#page-wrapper -->
             </div>
+
+
+            <!-- /.col-lg-12 -->
         </div>
-        <!-- /#page-wrapper -->
+        <!-- /.panel-body -->
     </div>
-    <!-- /#wrapper -->
+    <!-- /.panel -->
+    <!-- /#page-wrapper -->
 </div>
+<!-- /#wrapper -->
 
 <!-- jQuery -->
 <script src="../../vendor/jquery/jquery.min.js"></script>
