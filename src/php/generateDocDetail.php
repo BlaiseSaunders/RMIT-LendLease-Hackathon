@@ -4,11 +4,14 @@
 include 'bootstrap.php';
 ?>
 
-<script type="text/javascript" src="js/DocGeneration.js"></script>
-<script type="text/javascript" src="js/AddField.js"></script>
+<script type="text/javascript" src="../js/DocGeneration.js"></script>
+<script type="text/javascript" src="../js/AddField.js"></script>
 <link rel="stylesheet" type="text/css" href="../css/dropdown.css">
 
 <body>
+<?php
+include_once 'pageHeader.php';
+?>
 <div class="container row col-md-4 text-center" id="DocTitle">
     <h1>Title: </h1><strong><?php echo $_POST['title'] ?></strong>
 </div>

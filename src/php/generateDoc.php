@@ -3,9 +3,12 @@
 <?php
 include 'bootstrap.php';
 ?>
-<script type="text/javascript" src="js/DocGeneration.js"></script>
+<script type="text/javascript" src="../js/DocGeneration.js"></script>
 
 <body>
+<?php
+include_once 'pageHeader.php';
+?>
 <div class="row text-center col-md-12">
     <h1>What is the title?</h1>
     <form method="POST" action="generateDocDetail.php" onsubmit="return validation()">
