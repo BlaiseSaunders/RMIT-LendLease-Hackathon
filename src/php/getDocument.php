@@ -54,10 +54,14 @@ if ($result->num_rows > 0) {
 <div class="center-block">
 <img src='../img/thingmark.png'>
 </div>
+thingmark;
+        echo "<hr>";
+
+        echo <<<commentSection
 <div class="col-lg-12" style="width=100%">
 <iframe src="commentSystem.php" scrolling="yes" frameborder="0"></iframe>
 </div>
-thingmark;
+commentSection;
     }
 } else
     echo "0 Rows back sorry fam";
