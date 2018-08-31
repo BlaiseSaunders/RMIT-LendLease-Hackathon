@@ -31,7 +31,7 @@ include_once 'pageHeader.php';
                     <p>Incident circumstance: </p><input type="text" id="incidentCircumstance"
                                                          name="incidentCircumstance"
                                                          placeholder="Incident circumstance..."/>
-                    <p>Incident No.: </p><input type="text" id="incidentDate" name="incidentDate"
+                    <p>Incident No.: </p><input type="text" id="incidentNo" name="incidentNo"
                                                 placeholder="Incident No."/>
                     <p>Issued by: </p><input type="text" id="docAuthor" name="docAuthor" placeholder="Author..."/>
                     <p>Incident Date: </p><input type="date" id="incidentDate" name="incidentDate"

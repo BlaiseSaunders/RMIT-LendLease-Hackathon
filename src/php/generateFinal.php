@@ -28,7 +28,9 @@ $documentID = $last_id;
 
 $text_array = $_POST['text_field'];
 
-$text_array[] = $_POST['incidentCircumstance'];
+$text_array[] = "<h4>Incident Circumstance: ".$_POST['incidentCircumstance']."</h4>";
+$text_array[] = "<h4>Incident No: ".$_POST['incidentNo']."</h4>";
+$text_array[] = "<h4>Issued by: ".$_POST['docAuthor']."</h4>";
 $text_array[] = "<h4>Incident Date: ".$_POST['incidentDate']."</h4>";
 
 $dataLocation = "/srv/files/";
