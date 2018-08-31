@@ -26,6 +26,7 @@ $docuDataGet = "SELECT documentID, dataType, dataLocation FROM DocumentData WHER
 
 
 $result = $conn->query($docuGet);
+$documentID = 0;
 if ($result->num_rows > 0) {
     while ($row = $result->fetch_assoc()) {
         $docuID = $row['documentID'];
@@ -34,7 +35,7 @@ if ($result->num_rows > 0) {
         echo "<h1>Document: " . $row['name'] . "</h1><br/>";
         if ($feed)
             echo "</a>";
-        $documentID = $row['documentID'];
+	$documentID = $row['documentID'];
         $docres = $conn->query($docuDataGet . $documentID);
         if ($docres->num_rows > 0 && $feed == false) {
             while ($dataRow = $docres->fetch_assoc()) {
@@ -59,12 +60,10 @@ if ($result->num_rows > 0) {
 thingmark;
         echo "<hr>";
 
-        echo <<<commentSection
-<div class="col-md-12" style="width=100%">
-<iframe id="myIframe" src="commentSystem.php" scrolling="yes" frameborder="0"></iframe>
-</div>
-<br>
-commentSection;
+	echo '<div class="col-md-12" style="width=100%">';
+	echo '<iframe id="myIframe" src="commentSystem.php?documentID='.$documentID.'" scrolling="yes" frameborder="0"></iframe>';
+	echo '</div>';
+	echo '<br>';
     }
 } else
     echo "0 Rows back sorry fam";

@@ -36,7 +36,8 @@
 <div class="container">
     <div class="row">
         <div class="col-lg-12">
-            <form role="form" method='POST' action='addComment.php'>
+	    <form role="form" method='POST' action='addComment.php'>
+	    <input type='hidden' name='documentID' value='<?php $_GET['documentID']?>'>
                 <br>
                 <div class="form-group">
                     <label>Add a comment</label>
