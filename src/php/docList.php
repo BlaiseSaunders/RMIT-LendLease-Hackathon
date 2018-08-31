@@ -58,14 +58,6 @@ include_once 'pageHeader.php';
 	?>
 
 
-	<tr>
-            <td><a href="#">The first document</a></td>
-            <td>Author 1</td>
-        </tr>
-        <tr>
-            <td><a href="#">The second document</a></td>
-            <td>Author 2</td>
-        </tr>
     </table>
 </div>
 </body>
