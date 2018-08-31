@@ -49,7 +49,7 @@ foreach ($_POST['file_upload'] as $file) // TODO: MAKE THIS
 	
 	// MOVE FILE TO LOCATION
 	echo "File uploaded to: ".$file['name']."<br/>";
-	echo "File uploaded to: ".$file['tmp_name']."<br/>";
+	echo "File uploaded to temp: ".$file['tmp_name']."<br/>";
 	continue;
 
 	if ($conn->query($docuDataInsert."( '".$documentID."', 1, '".$thisDataLocation."' )") == TRUE)
