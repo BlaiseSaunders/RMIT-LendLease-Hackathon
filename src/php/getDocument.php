@@ -32,12 +32,12 @@ if ($result->num_rows > 0)
 				//echo "Data type: ".$dataRow['dataType']."<br/>";
 				if ($dataRow['dataType'] == 1)
 				{
-					echo "<h1> Image: </h1>"
+					echo "<h1> Image: </h1>";
 					echo "<img src='".$dataRow['dataLocation']."'/>";
 				}
 				else
 				{
-					echo "<h1> Paragraph: </h1>"
+					echo "<h1> Paragraph: </h1>";
 					echo file_get_contents($dataRow['dataLocation'])."<br/>";
 				}
 
