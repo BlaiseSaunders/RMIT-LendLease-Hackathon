@@ -14,9 +14,8 @@ $documentID = $_POST['documentID'];
 echo "Comment text: ".$commentText."<br/>";
 echo "Document ID: ".$documentID;
 
-die();
 
-if ($conn->query($commentCreate."( '0', '".$documentID."', '".$commentText."' )") == TRUE)
+if ($conn->query($commentCreate." ( '0', '".$documentID."', '".$commentText."' )") == TRUE)
 {    
 	$last_id = $conn->insert_id;
 	echo "New record created successfully. Last inserted ID is: " . $last_id;
