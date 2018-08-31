@@ -22,11 +22,11 @@ include_once 'pageHeader.php';
         </tr>
 
         <tr>
-            <td>The first document</td>
+            <td><a href="#">The first document</a></td>
             <td>Author 1</td>
         </tr>
         <tr>
-            <td>The second document</td>
+            <td><a href="#">The second document</a></td>
             <td>Author 2</td>
         </tr>
     </table>
