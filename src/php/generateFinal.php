@@ -2,6 +2,7 @@
 
 require "sql_header.php";
 
+header("refresh:2;url=hack.mynemmajeff.club/src/pages/home.html");
 
 $docuCreate = "INSERT INTO Document (name, DocumentType) VALUES ";
 $docuDataInsert = "INSERT INTO DocumentData (documentID, dataType, dataLocation) VALUES ";
