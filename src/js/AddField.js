@@ -1,9 +1,7 @@
-function add_field(type)
-{
-	var form_zone = document.getElementById("form_zone");
+function add_field(type) {
+    var form_zone = document.getElementById("form_zone");
 
-
-	var new_html = "";
+    var new_html = "";
 
 	switch(type)
 	{
@@ -19,6 +17,6 @@ function add_field(type)
 	}
 
 
-	form_zone.innerHTML += new_html;
+    form_zone.innerHTML += new_html;
 }
 
