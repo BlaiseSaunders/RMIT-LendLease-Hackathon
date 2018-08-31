@@ -49,7 +49,7 @@
                     <input type="file">
                 </div>
 
-                <button type="submit" class="btn btn-default">Submit Comment</button>
+                <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i>Submit Comment</button>
             </form>
         </div>
     </div>

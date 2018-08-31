@@ -60,7 +60,7 @@ thingmark;
         echo <<<commentSection
 <div class="container">
 <div class="col-lg-12" style="width=100%">
-<iframe src="commentSystem.php" scrolling="yes" frameborder="0"></iframe>
+<iframe src="commentSystem.php" scrolling="yes" frameborder="0" allowfullscreen></iframe>
 </div>
 </div>
 commentSection;
