@@ -1,14 +1,15 @@
 <!doctype html>
 <html>
-<?php
-include 'bootstrap.php';
-?>
+<head>
+    <?php
+    include 'bootstrap.php';
+    ?>
 
-<script type="text/javascript" src="../js/DocGeneration.js"></script>
-<script type="text/javascript" src="../js/AddField.js"></script>
-<link rel="stylesheet" type="text/css" href="../css/dropdown.css">
-<link rel="stylesheet" type="text/css" href="../css/docGeneration.css">
-
+    <script type="text/javascript" src="../js/DocGeneration.js"></script>
+    <script type="text/javascript" src="../js/AddField.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/dropdown.css">
+    <link rel="stylesheet" type="text/css" href="../css/docGeneration.css">
+</head>
 <body>
 <?php
 include_once 'pageHeader.php';
@@ -27,10 +28,13 @@ include_once 'pageHeader.php';
             <form action="generateFinal.php" method="post">
                 <div class="container" id="docIdentifier">
                     <p>Incident circumstance: </p><input type="text" id="incidentCircumstance"
-                                                         name="incidentCircumstance" placeholder="Incident circumstance..."/>
-                    <p>Incident No.: </p><input type="text" id="incidentDate" name="incidentDate" placeholder="Incident No."/>
+                                                         name="incidentCircumstance"
+                                                         placeholder="Incident circumstance..."/>
+                    <p>Incident No.: </p><input type="text" id="incidentDate" name="incidentDate"
+                                                placeholder="Incident No."/>
                     <p>Issued by: </p><input type="text" id="docAuthor" name="docAuthor" placeholder="Author..."/>
-                    <p>Incident Date: </p><input type="date" id="incidentDate" name="incidentDate" placeholder="Incident date..."/>
+                    <p>Incident Date: </p><input type="date" id="incidentDate" name="incidentDate"
+                                                 placeholder="Incident date..."/>
                 </div>
                 <hr class="separate-line">
                 <div class="container" id="docLearning">
@@ -50,18 +54,25 @@ include_once 'pageHeader.php';
                             <a href="#" onclick="add_field('audio')">Audio</a>
                         </div>
                     </div>
-                <input name="title" type="hidden" value="<?php echo $_POST['title'] ?>"/>
+                    <input name="title" type="hidden" value="<?php echo $_POST['title'] ?>"/>
 
-                <div id="form_zone">
+                    <div id="form_zone">
+                    </div>
                 </div>
                 <hr class="separate-line">
                 <div class="container" id="conclusion">
                     <h5>Conclusion</h5>
                     <textarea placeholder="Conclusion..."></textarea>
                 </div>
+
+                <div class="container" id="thingmark">
+                    <img src="../img/thingmark.png" alt="thingmark to scan">
+                </div>
+
                 <div class="container" id="docSubmitButton">
                     <button class="btn btn-primary">Confirm</button>
                 </div>
+                <br>
             </form>
         </div>
     </div>
