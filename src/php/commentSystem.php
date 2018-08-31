@@ -53,7 +53,7 @@
 	}
 	else
 	{
-		echo "<h2>No comments. Be the first to add one!</h2>"
+		echo "<h2>No comments. Be the first to add one!</h2>";
 	}
 
 
