@@ -60,8 +60,9 @@ thingmark;
 
         echo <<<commentSection
 <div class="col-md-12" style="width=100%">
-<iframe src="commentSystem.php" scrolling="yes" frameborder="0"></iframe>
+<iframe id="myIframe" src="commentSystem.php" scrolling="yes" frameborder="0"></iframe>
 </div>
+<br>
 commentSection;
     }
 } else
