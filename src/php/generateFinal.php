@@ -29,7 +29,7 @@ $documentID = $last_id;
 $text_array = $_POST['text_field'];
 
 $text_array[] = $_POST['incidentCircumstance'];
-$text_array[] = $_POST['incidentDate'];
+$text_array[] = "<h4>Incident Date: ".$_POST['incidentDate']."</h4>";
 
 $dataLocation = "/srv/files/";
 foreach ($text_array as $text)
