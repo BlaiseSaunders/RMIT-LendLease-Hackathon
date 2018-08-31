@@ -7,9 +7,12 @@ $docuCreate = "INSERT INTO Document (name, DocumentType) VALUES ";
 $docuDataInsert = "INSERT INTO Document (documentID, documentType) VALUES ";
 
 
-$documentName = $_POST['PLACEHOLDER'];
+$documentName = $_POST['title'];
 $documentType = $_POST['PLACEHOLDER'];
-$
+
+
+
+echo "document title: ".$documentName;
 
 
 

@@ -1,10 +1,10 @@
 <?php
 
 
-	$servername = $settings->host;
-	$username   = $settings->username;
-	$password   = $settings->password;
-	$db_name    = $settings->db_name;
+	$servername = "localhost";
+	$username   = "php";
+	$password   = "password";
+	$db_name    = "hackathon";
 
 	$conn = new mysqli($servername, $username, $password, $db_name);
 
