@@ -35,7 +35,7 @@
 
 <body>
 
-<div id='comments' />
+<div id='comments'> </div>
 
 <div class="container">
     <div class="row">
