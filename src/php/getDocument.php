@@ -4,7 +4,7 @@ require "sql_header.php";
 
 $docuGet = "SELECT documentID, name FROM Document";
 
-vardump($_GET);
+var_dump($_GET);
 
 if (isset($_GET['docunum']) == TRUE)
 {
