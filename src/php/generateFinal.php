@@ -41,6 +41,7 @@ foreach ($_POST['text_field'] as $text)
 	else
 		echo "Error: " . $conn->error;
 }
+var_dump($_FILES);
 foreach ($_FILES['file_upload']['tmp_name'] as $file) // TODO: MAKE THIS
 {
 	echo "<br> file: $file<br>";
