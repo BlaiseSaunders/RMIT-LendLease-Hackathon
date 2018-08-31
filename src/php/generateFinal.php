@@ -4,11 +4,11 @@ require "sql_header.php";
 
 
 $docuCreate = "INSERT INTO Document (name, DocumentType) VALUES ";
-$docuDataInsert = "INSERT INTO Document (documentID, dataType, dataLocation) VALUES ";
+$docuDataInsert = "INSERT INTO DocumentData (documentID, dataType, dataLocation) VALUES ";
 
 
 $documentName = $_POST['title'];
-$documentType = "Smart Document...";
+$documentType = "1";
 
 
 
@@ -23,11 +23,23 @@ if ($conn->query($docuCreate."( '".$documentName."', '".$documentType."' )") == 
 else
     echo "Error: " . $conn->error;
 
+$documentID = $last_id;
 
 
+$dataLocation = "/srv/files/";
 foreach ($_POST['text_field'] as $text)
 {
 	echo "<br> TETX: $text<br>";
+	$hash = hash("md5", $text);
+	$dataLocation .= $hash;
+	file_put_contents($dataLocation, $text);
+	if ($conn->query($docuDataInsert."( '".$documentID."', 'text', '".$dataLocation."' )") == TRUE)
+	{    
+		$last_id = $conn->insert_id;
+		echo "New record created successfully. Hash: ".$hash."Last inserted ID is: " . $last_id;
+	} 
+	else
+	echo "Error: " . $conn->error;
 }
 
 
