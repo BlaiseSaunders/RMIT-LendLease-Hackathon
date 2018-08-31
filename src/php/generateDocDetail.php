@@ -48,7 +48,7 @@ include_once 'pageHeader.php';
                 <div class="container" id="docAddition">
                     <h3>Please select the type of format you want to add to the document: </h3>
                     <div class="dropdown">
-                        <button class="dropbtn">Dropdown</button>
+                        <label class="dropbtn">Add component</label>
                         <div class="dropdown-content">
                             <a onclick="add_field('text')">Text</a>
                             <a onclick="add_field('video')">Video</a>
