@@ -29,7 +29,36 @@ include_once 'pageHeader.php';
             <th>Document Author</th>
         </tr>
 
-        <tr>
+
+	<?php
+		require "sql_header.php";
+
+		$docuGet = "SELECT documentID, name FROM Document ";
+
+		$result = $conn->query($docuGet);
+		if ($result->num_rows > 0)
+		{
+			while ($row = $result->fetch_assoc())
+			{
+				$docuID = $row['documentID'];
+				
+				echo "<a href='getDocument.php?docunum=$docuID'>";
+				echo "<tr>";
+				echo "<td>";
+				echo "<h1>Document: ".$row['name']."</h1><br/>";
+				echo "</td>";
+				echo "<td>";
+				echo "<h1>ID: $documentID </h1><br/>";
+				echo "</td>";
+				echo "</tr>";
+				echo "</a>";
+			}
+		}
+
+	?>
+
+
+	<tr>
             <td><a href="#">The first document</a></td>
             <td>Author 1</td>
         </tr>
