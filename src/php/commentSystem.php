@@ -48,7 +48,8 @@
 		while ($row = $result->fetch_assoc())
 		{
 			$content = $row['content'];
-			echo "<br/><h3>$content</h3><br/>";
+			echo "<b>Comment from John Smith: </b>";
+			echo "<p>$content</p><br/>";
 		}
 	}
 	else
