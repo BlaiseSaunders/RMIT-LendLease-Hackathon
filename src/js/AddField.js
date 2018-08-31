@@ -13,6 +13,7 @@ function add_field(type)
 			break;
 		case "audio":
 		case "video":
+		case "image":
 			new_html += "<input type='file' name='file_upload[]' id='file_upload'/><br>";
 			break;
 	}
