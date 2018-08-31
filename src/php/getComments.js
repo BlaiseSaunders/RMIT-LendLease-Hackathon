@@ -5,7 +5,7 @@ function get_comments()
 
 	var xhttp = new XMLHttpRequest();
 	// Call ourself with seed set, get the images and append them to the big container
-	xhttp.open("GET", "get_comments.php", true);
+	xhttp.open("GET", "getComments.php", true);
 	xhttp.onreadystatechange = function()
 	{
 		if (xhttp.readyState == 4 && xhttp.status == 200)
