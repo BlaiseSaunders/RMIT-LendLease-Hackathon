@@ -4,8 +4,6 @@ require "sql_header.php";
 
 $docuGet = "SELECT documentID, name FROM Document ";
 
-var_dump($_GET);
-
 if (isset($_GET['docunum']) == TRUE)
 {
 	$docuGet .= "WHERE documentID=".$_GET['docunum'];
