@@ -50,10 +50,9 @@ include_once 'pageHeader.php';
                             <a href="#" onclick="add_field('audio')">Audio</a>
                         </div>
                     </div>
-                    <input type="hidden" value="<?php echo $_POST['title'] ?>"/>
-                    <div id="form_zone">
+                <input name="title" type="hidden" value="<?php echo $_POST['title'] ?>"/>
 
-                    </div>
+                <div id="form_zone">
                 </div>
                 <hr class="separate-line">
                 <div class="container" id="conclusion">
