@@ -12,7 +12,16 @@ if ($result->num_rows > 0)
 {
 	while ($row = $result->fetch_assoc())
 	{
-		echo "AYY: ".$row['name'];
+		echo "Got document: ".$row['name']."<br/>";
+		$documentID = $row['documentID'];
+		$docres = $conn->query($docuDataGet.$documentID);
+		if ($docres->num_rows > 0)
+		{
+			while ($dataRow = $docres->fetch_assoc())
+			{
+				echo "Got document data: ".$docres['dataLocation']."<br/>";	
+			}
+		}
 	}
 }
 else
@@ -24,6 +33,5 @@ $documentID = $last_id;
 $dataLocation = "/srv/files/";
 
 
-echo "<h1>Document Generated!! (probably)</h1>";
 
 ?>
