@@ -54,18 +54,25 @@ include_once 'pageHeader.php';
                             <a href="#" onclick="add_field('audio')">Audio</a>
                         </div>
                     </div>
-                <input name="title" type="hidden" value="<?php echo $_POST['title'] ?>"/>
+                    <input name="title" type="hidden" value="<?php echo $_POST['title'] ?>"/>
 
-                <div id="form_zone">
+                    <div class="container" id="form_zone">
+                    </div>
                 </div>
                 <hr class="separate-line">
                 <div class="container" id="conclusion">
                     <h5>Conclusion</h5>
                     <textarea placeholder="Conclusion..."></textarea>
                 </div>
+
+                <div class="container" id="thingmark">
+                    <img src="../img/thingmark.png" alt="thingmark to scan">
+                </div>
+
                 <div class="container" id="docSubmitButton">
                     <button class="btn btn-primary">Confirm</button>
                 </div>
+                <br>
             </form>
         </div>
     </div>
