@@ -5,7 +5,10 @@ require "sql_header.php";
 $docuGet = "SELECT documentID, name FROM Document";
 
 if (isset($_GET['docunum']) == TRUE)
+{
+	echo "DOCUNUM <br/>";
 	$docuGet .= "WHERE documentID=".$_GET['docunum'];
+}
 
 
 $docuDataGet = "SELECT documentID, dataType, dataLocation FROM DocumentData WHERE documentID=";
