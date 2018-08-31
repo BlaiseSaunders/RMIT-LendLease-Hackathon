@@ -27,36 +27,42 @@ include_once 'pageHeader.php';
             <form action="generateFinal.php" method="post">
                 <div class="container" id="docIdentifier">
                     <p>Incident circumstance: </p><input type="text" id="incidentCircumstance"
-                                                         name="incidentCircumstance"/>
-                    <p>Incident No.: </p><input type="text" id="incidentDate" name="incidentDate">
-                    <p>Issued by: </p><input type="text" id="docAuthor" name="docAuthor">
-                    <p>Incident Date: </p><input type="date" id="incidentDate" name="incidentDate">
+                                                         name="incidentCircumstance" placeholder="Incident circumstance..."/>
+                    <p>Incident No.: </p><input type="text" id="incidentDate" name="incidentDate" placeholder="Incident No."/>
+                    <p>Issued by: </p><input type="text" id="docAuthor" name="docAuthor" placeholder="Author..."/>
+                    <p>Incident Date: </p><input type="date" id="incidentDate" name="incidentDate" placeholder="Incident date..."/>
                 </div>
                 <hr class="separate-line">
-                <h3>Please select the type of format you want to add to the document: </h3>
-                <div class="dropdown">
-                    <button class="dropbtn">Dropdown</button>
-                    <div class="dropdown-content">
-                        <a href="#" onclick="add_field('text')">Text</a>
-                        <a href="#" onclick="add_field('video')">Video</a>
-                        <a href="#" onclick="add_field('audio')">Audio</a>
+                <div class="container" id="docLearning">
+                    <p>Description of incident: </p>
+                    <textarea placeholder="Description of incident..."></textarea>
+                    <p>Key Learning: </p>
+                    <textarea placeholder="Key learning point..."></textarea>
+                </div>
+                <hr class="separate-line">
+                <div class="container" id="docAddition">
+                    <h3>Please select the type of format you want to add to the document: </h3>
+                    <div class="dropdown">
+                        <button class="dropbtn">Dropdown</button>
+                        <div class="dropdown-content">
+                            <a href="#" onclick="add_field('text')">Text</a>
+                            <a href="#" onclick="add_field('video')">Video</a>
+                            <a href="#" onclick="add_field('audio')">Audio</a>
+                        </div>
+                    </div>
+                    <input type="hidden" value="<?php echo $_POST['title'] ?>"/>
+                    <div id="form_zone">
+
                     </div>
                 </div>
-
-                <input type="hidden" value="<?php echo $_POST['title'] ?>"/>
-
-                <div id="form_zone">
-
-                </div>
-
                 <hr class="separate-line">
-
-                <div id="conclusion">
+                <div class="container" id="conclusion">
                     <h5>Conclusion</h5>
-                    <textarea>
-            </textarea>
+                    <textarea placeholder="Conclusion..."></textarea>
                 </div>
-                <button class="btn btn-primary">Confirm</button>
+                <div class="container" id="docSubmitButton">
+                    <button class="btn btn-primary">Confirm</button>
+                </div>
             </form>
         </div>
     </div>
