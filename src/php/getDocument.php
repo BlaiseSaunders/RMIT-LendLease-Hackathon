@@ -9,7 +9,7 @@ var_dump($_GET);
 if (isset($_GET['docunum']) == TRUE)
 {
 	$docuGet .= "WHERE documentID=".$_GET['docunum'];
-	echo "DOCUNUM <br/>$docuGet<br/>";
+	//echo "DOCUNUM <br/>$docuGet<br/>";
 }
 
 
@@ -21,19 +21,27 @@ if ($result->num_rows > 0)
 {
 	while ($row = $result->fetch_assoc())
 	{
-		echo "Got document: ".$row['name']."<br/>";
+		echo "<h1>Document: ".$row['name']."</h1><br/>";
 		$documentID = $row['documentID'];
 		$docres = $conn->query($docuDataGet.$documentID);
 		if ($docres->num_rows > 0)
 		{
 			while ($dataRow = $docres->fetch_assoc())
 			{
-				echo "Got document data: ".$dataRow['dataLocation']."<br/>";	
-				echo "Data type: ".$dataRow['dataType']."<br/>";
+				//echo "Got document data: ".$dataRow['dataLocation']."<br/>";	
+				//echo "Data type: ".$dataRow['dataType']."<br/>";
 				if ($dataRow['dataType'] == 1)
+				{
+					echo "<h1> Image: </h1>"
 					echo "<img src='".$dataRow['dataLocation']."'/>";
+				}
 				else
+				{
+					echo "<h1> Paragraph: </h1>"
 					echo file_get_contents($dataRow['dataLocation'])."<br/>";
+				}
+
+				echo "<hr/>";
 			}
 		}
 		else
