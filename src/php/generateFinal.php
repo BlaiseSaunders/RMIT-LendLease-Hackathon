@@ -15,7 +15,7 @@ $documentType = "Smart Document...";
 echo "document title: ".$documentName;
 
 
-if ($conn->query($docuCreate."( ".$documentName.", ".$documentType." )") == TRUE)
+if ($conn->query($docuCreate."( '".$documentName."', '".$documentType."' )") == TRUE)
 {    
 	$last_id = $conn->insert_id;
 	echo "New record created successfully. Last inserted ID is: " . $last_id;
