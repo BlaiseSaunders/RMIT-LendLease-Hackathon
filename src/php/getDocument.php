@@ -43,7 +43,6 @@ if ($result->num_rows > 0) {
                     echo "<h1> Image: </h1>";
                     echo "<img style='height: 200px;' src='" . $dataRow['dataLocation'] . "'/>";
                 } else {
-                    echo "<h1> Paragraph: </h1>";
                     echo file_get_contents($dataRow['dataLocation']) . "<br/>";
                 }
 
