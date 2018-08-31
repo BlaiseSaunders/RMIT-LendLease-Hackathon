@@ -2,7 +2,7 @@
 
 require "sql_header.php";
 
-$docuGet = "SELECT documentID, name FROM Document";
+$docuGet = "SELECT documentID, name FROM Document ";
 
 var_dump($_GET);
 
