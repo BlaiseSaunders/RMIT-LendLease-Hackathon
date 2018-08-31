@@ -41,6 +41,20 @@ foreach ($_POST['text_field'] as $text)
 	else
 	echo "Error: " . $conn->error;
 }
+foreach ($_POST['file_upload'] as $file) // TODO: MAKE THIS
+{
+	echo "<br> TETX: $text<br>";
+	$hash = hash("md5", $text);
+	$thisDataLocation = $dataLocation.$hash;
+	file_put_contents($dataLocation, $text);
+	if ($conn->query($docuDataInsert."( '".$documentID."', 'text', '".$thisDataLocation."' )") == TRUE)
+	{    
+		$last_id = $conn->insert_id;
+		echo "New record created successfully. Hash: ".$hash."Last inserted ID is: " . $last_id;
+	} 
+	else
+	echo "Error: " . $conn->error;
+}
 
 
 
