@@ -7,7 +7,7 @@ $commentCreate = "INSERT INTO Comment (userID, documentID, comment) VALUES ";
 
 
 $commentText = $_POST['text'];
-$documentID = $_POST['documentID'];
+$documentID = $_GET['documentID'];
 
 
 echo "Comment text: ".$commentText."<br/>";
