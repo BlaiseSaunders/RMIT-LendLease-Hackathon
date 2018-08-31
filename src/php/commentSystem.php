@@ -36,7 +36,7 @@
 <?php
 	require "sql_header.php";
 
-	$documentID = $_GET('documentID');
+	$documentID = $_GET['documentID'];
 
 	$commentGet = "SELECT documentID, content  FROM Comment WHERE documentID=".$documentID;
 
