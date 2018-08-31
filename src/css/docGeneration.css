@@ -1,0 +1,11 @@
+.title-float-left {
+    float: left;
+}
+
+.title-float-right {
+    float: right;
+}
+
+.float-clear {
+    clear: both;
+}
