@@ -3,7 +3,7 @@
 require "sql_header.php";
 
 
-$docuGet = "SELECT documentID, name FROM document";
+$docuGet = "SELECT documentID, name FROM Document";
 $docuDataGet = "SELECT documentID, dataType, dataLocation FROM DocumentData WHERE documentID=";
 
 
