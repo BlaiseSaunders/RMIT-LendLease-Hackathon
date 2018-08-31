@@ -10,3 +10,12 @@ h3 {
     text-align: center;
     font-weight: bold;
 }
+
+#smartDocLabel {
+    float: left;
+}
+
+#searchBox {
+    float: right;
+    margin-top: 20px;
+}
