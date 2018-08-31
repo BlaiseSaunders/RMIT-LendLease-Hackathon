@@ -1,5 +1,8 @@
 <!doctype html>
 <html>
+<head>
+    <link href="../css/header.css" type="text/css" rel="stylesheet"/>
+</head>
 <?php
 include 'bootstrap.php';
 
@@ -46,7 +49,9 @@ if ($result->num_rows > 0) {
         } else if ($feed == false)
             echo "This document does nto have any attachments";
 
-        echo "<img src='../img/thingmark.png' class='center-img'>";
+        echo <<<thingmark
+<img src='../img/thingmark.png' class='center-img'>;
+thingmark;
     }
 } else
     echo "0 Rows back sorry fam";
