@@ -8,8 +8,8 @@ var_dump($_GET);
 
 if (isset($_GET['docunum']) == TRUE)
 {
-	echo "DOCUNUM <br/>";
 	$docuGet .= "WHERE documentID=".$_GET['docunum'];
+	echo "DOCUNUM <br/>$docuGet<br/>";
 }
 
 
