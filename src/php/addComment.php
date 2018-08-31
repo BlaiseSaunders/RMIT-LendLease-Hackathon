@@ -23,7 +23,8 @@ if ($conn->query($commentCreate." ( '0', '".$documentID."', '".$commentText."' )
 else
     echo "Error: " . $conn->error;
 
+header('Location: ' . $_SERVER['HTTP_REFERER']);
 
-echo "<h1>Comment Added!! (probably)</h1>";
+echo "<h1>Comment Added</h1>";
 
 ?>

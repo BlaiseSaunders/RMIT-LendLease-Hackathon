@@ -33,12 +33,38 @@
 
 <body>
 
+<?php
+	require "sql_header.php";
+
+	$documentID = $_GET('documentID');
+
+	$commentGet = "SELECT documentID, content  FROM Comment WHERE documentID=".$documentID;
+
+
+
+	$result = $conn->query($commentGet);
+	if ($result->num_rows > 0) 
+	{
+		while ($row = $result->fetch_assoc())
+		{
+			$content = $row['content'];
+			echo "<br/><h3>$content</h3><br/>";
+		}
+	}
+	else
+	{
+		echo "<h2>No comments. Be the first to add one!</h2>"
+	}
+
+
+
+?>
 <div class="container">
     <div class="row">
         <div class="col-lg-12">
 	    <form role="form" method='POST' action='addComment.php'>
 	    <input type='hidden' name='documentID' value='<?php echo $_GET['documentID']; ?>' />
-                <br>
+                <br />
                 <div class="form-group">
                     <label>Add a comment</label>
                     <textarea name='text' rows="3" class="form-control" placeholder="Enter text"></textarea>
