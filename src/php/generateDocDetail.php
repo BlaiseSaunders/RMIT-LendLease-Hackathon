@@ -49,9 +49,9 @@ include_once 'pageHeader.php';
                     <div class="dropdown">
                         <button class="dropbtn">Dropdown</button>
                         <div class="dropdown-content">
-                            <a href="#" onclick="add_field('text')">Text</a>
-                            <a href="#" onclick="add_field('video')">Video</a>
-                            <a href="#" onclick="add_field('audio')">Audio</a>
+                            <a onclick="add_field('text')">Text</a>
+                            <a onclick="add_field('video')">Video</a>
+                            <a onclick="add_field('audio')">Audio</a>
                         </div>
                     </div>
                     <input name="title" type="hidden" value="<?php echo $_POST['title'] ?>"/>

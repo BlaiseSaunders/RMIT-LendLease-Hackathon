@@ -30,11 +30,11 @@ include_once 'pageHeader.php';
         </tr>
 
         <tr>
-            <td><a href="#">The first document</a></td>
+            <td><a href="../pages/smartDocView.html">The first document</a></td>
             <td>Author 1</td>
         </tr>
         <tr>
-            <td><a href="#">The second document</a></td>
+            <td><a href="../pages/smartDocView.html">The second document</a></td>
             <td>Author 2</td>
         </tr>
     </table>
