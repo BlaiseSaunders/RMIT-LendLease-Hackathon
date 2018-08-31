@@ -26,7 +26,7 @@ include_once 'pageHeader.php';
     <table border="1" class="col-md-12" id="docTable">
         <tr>
             <th>Document Title</th>
-            <th>Document Author</th>
+            <th>Document ID</th>
         </tr>
 
 
@@ -42,16 +42,16 @@ include_once 'pageHeader.php';
 			{
 				$docuID = $row['documentID'];
 				
-				echo "<a href='getDocument.php?docunum=$docuID'>";
 				echo "<tr>";
 				echo "<td>";
-				echo "<h1>Document: ".$row['name']."</h1><br/>";
+				echo "<a href='getDocument.php?docunum=$docuID'>";
+				echo "<h4>Document: ".$row['name']."</h4>";
+				echo "</a>";
 				echo "</td>";
 				echo "<td>";
-				echo "<h1>ID: $documentID </h1><br/>";
+				echo "<h4>ID: $docuID </h4>";
 				echo "</td>";
 				echo "</tr>";
-				echo "</a>";
 			}
 		}
 
