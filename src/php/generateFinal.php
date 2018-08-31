@@ -49,11 +49,12 @@ var_dump($_FILES);
 echo "POST: <br/>";
 var_dump($_POST);
 
+$fileDataLocation = "/srv/hack/srv/files/";
 foreach ($_FILES['file_upload']['tmp_name'] as $file) // TODO: MAKE THIS
 {
 	echo "<br> file: $file<br>";
 	$hash = hash("md5", $file);
-	$thisDataLocation = $dataLocation.$hash;
+	$thisDataLocation = $fileDataLocation.$hash;
 	
 	// MOVE FILE TO LOCATION
 	echo "File uploaded to: ".$file."<br/>";
