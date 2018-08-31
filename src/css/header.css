@@ -1,0 +1,11 @@
+.center-block {
+    text-align: center;
+    width: 100%;
+}
+
+.center-img {
+    display: inline-block;
+    margin: 0 auto;
+    height: 60px;
+    width: 90px;
+}

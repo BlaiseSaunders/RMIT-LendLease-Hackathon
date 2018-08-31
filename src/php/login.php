@@ -5,6 +5,9 @@
     ?>
 
     <body>
+    <?php
+        include_once 'pageHeader.php';
+    ?>
         <div class="row">
             <h1 class="container text-center">Login</h1>
         </div>

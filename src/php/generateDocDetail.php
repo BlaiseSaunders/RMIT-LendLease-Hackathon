@@ -6,7 +6,7 @@ include 'bootstrap.php';
 
 <script type="text/javascript" src="js/DocGeneration.js"></script>
 <script type="text/javascript" src="js/AddField.js"></script>
-<link rel="stylesheet" type="text/css" href="css/dropdown.css">
+<link rel="stylesheet" type="text/css" href="../css/dropdown.css">
 
 <body>
 <div class="container row col-md-4 text-center" id="DocTitle">
