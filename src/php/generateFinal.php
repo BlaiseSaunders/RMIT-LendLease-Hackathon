@@ -8,7 +8,7 @@ $docuDataInsert = "INSERT INTO Document (documentID, documentType) VALUES ";
 
 
 $documentName = $_POST['title'];
-$documentType = $_POST['PLACEHOLDER'];
+$documentType = "Smart Document...";
 
 
 

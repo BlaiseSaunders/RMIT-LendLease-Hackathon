@@ -43,7 +43,7 @@ include_once 'pageHeader.php';
                     </div>
                 </div>
 
-                <input type="hidden" value="<?php echo $_POST['title'] ?>"/>
+                <input name="title" type="hidden" value="<?php echo $_POST['title'] ?>"/>
 
                 <div id="form_zone">
 
