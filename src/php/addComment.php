@@ -3,7 +3,7 @@
 require "sql_header.php";
 
 
-$commentCreate = "INSERT INTO Comment (userID, documentID, comment) VALUES ";
+$commentCreate = "INSERT INTO Comment (userID, documentID, content) VALUES ";
 
 
 $commentText = $_POST['text'];
