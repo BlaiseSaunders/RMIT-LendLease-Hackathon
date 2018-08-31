@@ -4,7 +4,7 @@ require "sql_header.php";
 
 
 $docuCreate = "INSERT INTO Document (name, DocumentType) VALUES ";
-$docuDataInsert = "INSERT INTO Document (documentID, dataType, dataLocation) VALUES ";
+$docuDataInsert = "INSERT INTO DocumentData (documentID, dataType, dataLocation) VALUES ";
 
 
 $documentName = $_POST['title'];
