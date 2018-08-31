@@ -50,7 +50,7 @@ if ($result->num_rows > 0) {
             echo "This document does nto have any attachments";
 
         echo <<<thingmark
-<img src='../img/thingmark.png' class='center-img'>;
+<br><img src='../img/thingmark.png' class='center-img'>;
 thingmark;
     }
 } else
