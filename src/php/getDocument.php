@@ -31,7 +31,7 @@ if ($result->num_rows > 0)
 				if ($dataRow['dataType'] == 1)
 				{
 					echo "<h1> Image: </h1>";
-					echo "<img src='".$dataRow['dataLocation']."'/>";
+					echo "<img style='height: 500px;' src='".$dataRow['dataLocation']."'/>";
 				}
 				else
 				{
