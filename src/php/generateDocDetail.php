@@ -25,7 +25,7 @@ include_once 'pageHeader.php';
 <div class="container">
     <div id="docDetail">
         <div class="row col-md-12">
-            <form action="generateFinal.php" method="post">
+            <form action="generateFinal.php" method="post" enctype="multipart/form-data">
                 <div class="container" id="docIdentifier">
                     <p>Incident circumstance: </p><input type="text" id="incidentCircumstance"
                                                          name="incidentCircumstance"
