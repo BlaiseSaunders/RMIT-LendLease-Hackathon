@@ -26,17 +26,38 @@ include_once 'pageHeader.php';
     <table border="1" class="col-md-12" id="docTable">
         <tr>
             <th>Document Title</th>
-            <th>Document Author</th>
+            <th>Document ID</th>
         </tr>
 
-        <tr>
-            <td><a href="../pages/smartDocView.html">The first document</a></td>
-            <td>Author 1</td>
-        </tr>
-        <tr>
-            <td><a href="../pages/smartDocView.html">The second document</a></td>
-            <td>Author 2</td>
-        </tr>
+
+	<?php
+		require "sql_header.php";
+
+		$docuGet = "SELECT documentID, name FROM Document ";
+
+		$result = $conn->query($docuGet);
+		if ($result->num_rows > 0)
+		{
+			while ($row = $result->fetch_assoc())
+			{
+				$docuID = $row['documentID'];
+				
+				echo "<tr>";
+				echo "<td>";
+				echo "<a href='getDocument.php?docunum=$docuID'>";
+				echo "<h4>Document: ".$row['name']."</h4>";
+				echo "</a>";
+				echo "</td>";
+				echo "<td>";
+				echo "<h4>ID: $docuID </h4>";
+				echo "</td>";
+				echo "</tr>";
+			}
+		}
+
+	?>
+
+
     </table>
 </div>
 </body>
