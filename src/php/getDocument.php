@@ -2,6 +2,7 @@
 <html>
 <head>
     <link href="../css/header.css" type="text/css" rel="stylesheet"/>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <?php
 include 'bootstrap.php';
@@ -60,7 +61,7 @@ thingmark;
         echo <<<commentSection
 <div class="container">
 <div class="col-lg-12" style="width=100%">
-<iframe src="commentSystem.php" scrolling="yes" frameborder="0" allowfullscreen></iframe>
+<iframe src="commentSystem.php" scrolling="yes" frameborder="0"></iframe>
 </div>
 </div>
 commentSection;

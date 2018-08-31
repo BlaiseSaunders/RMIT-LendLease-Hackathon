@@ -9,6 +9,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
     <title>Please login</title>
 
     <!-- Bootstrap Core CSS -->
@@ -49,7 +51,7 @@
                     <input type="file">
                 </div>
 
-                <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i>Submit Comment</button>
+                <button type="submit" class="btn btn-primary">Submit Comment<i class="fas fa-paper-plane"></i></button>
             </form>
         </div>
     </div>
