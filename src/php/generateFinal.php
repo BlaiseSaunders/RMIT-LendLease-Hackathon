@@ -41,7 +41,7 @@ foreach ($_POST['text_field'] as $text)
 	else
 		echo "Error: " . $conn->error;
 }
-foreach ($_POST['file_upload'] as $file) // TODO: MAKE THIS
+foreach ($_FILES['file_upload'] as $file) // TODO: MAKE THIS
 {
 	echo "<br> file: $file<br>";
 	$hash = hash("md5", $text);
