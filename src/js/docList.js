@@ -5,7 +5,7 @@ function docFilter() {
     let tempStr;
     for (let i = 1, j = tableVal.rows.length; i < j; i++) {
         tempStr = tableVal.rows[i].cells[0].innerHTML;
-        if (!tempStr.includes(filter)) {
+        if (!tempStr.toUpperCase().includes(filter.toUpperCase())) {
             document.getElementById("docTable").rows[i].style.display = 'none';
         } else {
             document.getElementById("docTable").rows[i].style.display = '';
