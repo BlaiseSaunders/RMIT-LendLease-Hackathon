@@ -9,3 +9,9 @@
 .float-clear {
     clear: both;
 }
+
+.separate-line {
+    color: #000000;
+    border: 0;
+    border-top: 1px solid;
+}
