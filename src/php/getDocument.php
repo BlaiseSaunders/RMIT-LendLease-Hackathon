@@ -19,7 +19,7 @@ if ($result->num_rows > 0)
 		{
 			while ($dataRow = $docres->fetch_assoc())
 			{
-				echo "Got document data: ".$docres['dataLocation']."<br/>";	
+				echo "Got document data: ".$dataRow['dataLocation']."<br/>";	
 			}
 		}
 		else
