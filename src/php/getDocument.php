@@ -59,10 +59,8 @@ thingmark;
         echo "<hr>";
 
         echo <<<commentSection
-<div class="container">
-<div class="col-lg-12" style="width=100%">
+<div class="col-md-12" style="width=100%">
 <iframe src="commentSystem.php" scrolling="yes" frameborder="0"></iframe>
-</div>
 </div>
 commentSection;
     }
