@@ -61,7 +61,7 @@ thingmark;
         echo "<hr>";
 
 	echo '<div class="col-md-12" style="width=100%">';
-	echo '<iframe id="myIframe" src="commentSystem.php?documentID='.$documentID.'" scrolling="yes" frameborder="0"></iframe>';
+	echo '<iframe id="myIframe" src="commentSystem.php?documentID='.$documentID.'" scrolling="yes" frameborder="0" style="height: 400px"></iframe>';
 	echo '</div>';
 	echo '<br>';
     }
