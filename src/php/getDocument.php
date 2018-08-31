@@ -4,6 +4,8 @@ require "sql_header.php";
 
 $docuGet = "SELECT documentID, name FROM Document";
 
+vardump($_GET);
+
 if (isset($_GET['docunum']) == TRUE)
 {
 	echo "DOCUNUM <br/>";
