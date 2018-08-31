@@ -54,7 +54,9 @@ if ($result->num_rows > 0) {
 <div class="center-block">
 <img src='../img/thingmark.png'>
 </div>
-<iframe src="commentSystem.php"></iframe>
+<div class="container col-lg-12">
+<iframe src="commentSystem.php" scrolling="yes" frameborder="0"></iframe>
+</div>
 thingmark;
     }
 } else
