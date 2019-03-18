@@ -1,4 +1,3 @@
-# hackathon
-Hello bois, I organized all your php files into the src folder. 
+# Hooked IoT Integrated Documents
 
-And please do refer to the agile kanban board for your tasks.
+This is an archive for the Hooked IoT smart documents management system
